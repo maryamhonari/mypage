@@ -15,21 +15,21 @@
 # in the templates via {{ site.myvariable }}.
 title: Maryam Honari
 description: > # this means to ignore newlines until "baseurl:"
-  Material theme based on <a href="http://materializecss.com">Materialize.css</a> for jekyll sites
-baseurl: "/matjek"
-url: "https://shawnteoh.github.io"
+  Maryam's corner
+baseurl: ""
+url: "https://mahon94.github.io" #TODO
 permalink: /:year/:month/:day/:title
-repository: ShawnTeoh/matjek
+repository: mahon94/webpage
 paginate: 5
 
 # MatJek specific configurations
-github_profile: "https://github.com/ShawnTeoh"
+github_profile: "https://github.com/mahon94"
 user: "Maryam Honari"
 user_email: "mhonari [at] uvic dot ca"
-contact_url: "https://goo.gl/tVljbV"
-google_tracking_id: "UA-96359860-1"
-google_site_verification: "UA-96359860-1"
-disqus_shortname: "matjek"
+contact_url: "mailto:mhonari@uvic.ca"
+# google_tracking_id: "UA-96359860-1"
+# google_site_verification: "UA-96359860-1"
+disqus_shortname: "mahon94"
 
 # Build settings
 markdown: kramdown

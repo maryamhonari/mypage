@@ -1,8 +1,20 @@
+<!-- <style>
+a { color:  #2d8659; }
+</style>
+
+<div class ="container tag-div "  style="position:relative; width: 60%;"> -->
+  <!-- <div class="user center-align">
+    <a href="{{site.github_profile}}" target="_blank"><img class="circle hoverable z-depth-1" src="{{site.baseurl}}/assets/res/user.jpg"></a>
+  </div> -->
+<!-- Under Construction... Check my <a href="https://github.com/mahon94" target="_blank"> github!</a>
+</div>
+ -->
+
 {% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse  %}
 <div class="col s12 switch">
   <label>
     Show forked projects
-    <input class="fork-switch" type="checkbox" checked="1" onchange="toggleForked()">
+    <input class="fork-switch" type="checkbox" checked="0" onchange="toggleForked()">
     <span class="lever"></span>
   </label>
 </div>
