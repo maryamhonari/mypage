@@ -17,19 +17,19 @@ title: Maryam Honari
 description: > # this means to ignore newlines until "baseurl:"
   Maryam's corner
 baseurl: ""
-url: "https://mahon94.github.io" #TODO
+url: "https://maryamhonari.github.io" #TODO
 permalink: /:year/:month/:day/:title
-repository: mahon94/
+repository: maryamhonari/
 paginate: 5
 
 # MatJek specific configurations
-github_profile: "https://github.com/mahon94"
+github_profile: "https://github.com/maryamhonari"
 user: "Maryam Honari"
 user_email: "mhonari [at] uvic dot ca"
 contact_url: "mailto:mhonari@uvic.ca"
 # google_tracking_id: "UA-96359860-1"
 # google_site_verification: "UA-96359860-1"
-disqus_shortname: "mahon94"
+disqus_shortname: "maryamhonari"
 
 # Build settings
 markdown: kramdown
