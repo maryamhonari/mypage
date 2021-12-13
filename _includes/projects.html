@@ -1,50 +1,35 @@
-<!-- <style>
-a { color:  #2d8659; }
-</style>
-
-<div class ="container tag-div "  style="position:relative; width: 60%;"> -->
-  <!-- <div class="user center-align">
-    <a href="{{site.github_profile}}" target="_blank"><img class="circle hoverable z-depth-1" src="{{site.baseurl}}/assets/res/user.jpg"></a>
-  </div> -->
-<!-- Under Construction... Check my <a href="https://github.com/maryamhonari" target="_blank"> github!</a>
-</div>
- -->
-
-{% assign sorted_repos = (site.github.public_repositories | sort: 'stargazers_count') | reverse  %}
-<div class="col s12 switch">
-  <label>
-    Show forked projects
-    <input class="fork-switch" type="checkbox" checked="0" onchange="toggleForked()">
-    <span class="lever"></span>
-  </label>
-</div>
-{% for repo in sorted_repos %}
-<div class="col s12 m6 l4" {% if repo.fork %}id="forked"{% endif %}>
-  <div class="card hoverable">
-    <div class="card-image waves-effect waves-block waves-light geopattern activator" data-pattern-id="{{repo.name}}">
-      <i class="material-icons waves-effect waves-block waves-light">more_vert</i>
-      <a class="card-title center-align valign-wrapper" href="{{repo.html_url}}" target="_blank">{{repo.name}}</a>
-    </div>
-    <div class="card-content valign-wrapper center-align activator">
-      <span class="activator grey-text text-darken-1">{{repo.description}}</span>
-    </div>
-    <div class="card-reveal">
-      <div class="card-reveal-content">
-        <span class="card-title grey-text text-darken-4">Statistics<i class="material-icons right">close</i></span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.stargazers_count}} stars">
-          <i class="material-icons">star</i>
-          {{repo.stargazers_count}}
-        </span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="{{repo.forks_count}} forks">
-          <i class="material-icons">call_split</i>
-          {{repo.forks_count}}
-        </span>
-        <span class="tooltipped" data-position="bottom" data-delay="30" data-tooltip="Last updated：{{repo.updated_at}}">
-          <i class="material-icons">access_time</i>
-          <time datetime="{{repo.updated_at}}" title="{{repo.updated_at}}">{{repo.updated_at | date: '%Y-%m-%d'}}</time>
-        </span>
+<div class="grid-item">
+  {% if project.redirect %}
+  <a href="{{ project.redirect }}">
+  {% else %}
+  <a href="{{ project.url | relative_url }}">
+  {% endif %}
+    <div class="card hoverable">
+      {% if project.img %}
+        {% responsive_image_block %}
+          path: {{ project.img }}
+          alt: "project thumbnail"
+        {% endresponsive_image_block %}
+      {% endif %}
+      <div class="card-body">
+        <h2 class="card-title text-lowercase">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
+        <div class="row ml-1 mr-1 p-0">
+          {% if project.github %}
+          <div class="github-icon">
+            <div class="icon" data-toggle="tooltip" title="Code Repository">
+              <a href="{{ project.github }}"><i class="fab fa-github gh-icon"></i></a>
+            </div>
+            {% if project.github_stars %}
+            <span class="stars" data-toggle="tooltip" title="GitHub Stars">
+              <i class="fas fa-star"></i>
+              <span id="{{ project.github_stars }}-stars"></span>
+            </span>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
       </div>
     </div>
-  </div>
+  </a>
 </div>
-{% endfor %}

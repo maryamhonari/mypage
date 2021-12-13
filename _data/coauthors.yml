@@ -1,0 +1,51 @@
+"Chouinard":
+  - firstname: [Brea, Brea*, Brea *]
+    url: https://www.ksr.ualberta.ca/acelab/?page_id=271
+
+"Blanco-Elorrieta":
+  - firstname: [Esti]
+    url: https://estiblancoelorrieta.github.io/
+
+"Pylkkänen":
+  - firstname: [Liina]
+    url: https://wp.nyu.edu/neurolinglab/people/liina-pylkkanen/
+
+
+"Fyshe":
+  - firstname: [Alona]
+    url: https://webdocs.cs.ualberta.ca/~alona/
+
+
+"Chan":
+  - firstname: [Sophia, Sophia*]
+    url: https://ca.linkedin.com/sophia-mw-chan
+
+"Lakhani":
+  - firstname: [Aazim]
+    url: https://www.linkedin.com/in/aazimlakhani/
+
+"Benetti":
+  - firstname: [Benjamin, Benjamin*]
+    url: https://bbenetti.ca/
+
+
+
+
+"Adams":
+  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
+    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+
+"Podolsky":
+  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
+    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+
+"Rosen":
+  - firstname: ["Nathan", "N."]
+    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+
+"Bach": 
+  - firstname: ["Johann Sebastian", "J. S."]
+    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+
+  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
+    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
